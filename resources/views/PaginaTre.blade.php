@@ -9,9 +9,14 @@
         span {
             color: blue;
         }
+        a {
+            text-decoration: none;
+            color: green;
+        }
     </style>
 </head>
 <body>
     <h1>Questa è la pagina <span>TRE</span></h1>
+    <a href="{{ url()->previous() }}"><h2>Torna alla Home</h2></a>
 </body>
 </html>
