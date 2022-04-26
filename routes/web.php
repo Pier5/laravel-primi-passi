@@ -36,3 +36,15 @@ Route::get('/', function () {
     ];
     return view('home', $Hello, $Students);
 });
+
+Route::get('/PaginaUno', function () {
+    return view('PaginaUno');
+})->name('PaginaUno');
+
+Route::get('/PaginaDue', function () {
+    return view('PaginaDue');
+})->name('PaginaDue');
+
+Route::get('/PaginaTre', function () {
+    return view('PaginaTre');
+})->name('PaginaTre');
