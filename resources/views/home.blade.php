@@ -9,11 +9,13 @@
 <body>
     <h1>{{ $Hello }}</h1>
     <ul>
-        <li>{{ $Name }}
-            <ul>
-                <li>{{ $Class }}</li>
-            </ul>
-        </li>
+        @foreach ($Students as $Student)
+            <li>{{ $Student['Name'] }}
+                <ul>
+                    <li>{{ $Student['Class']}}</li>
+                </ul>
+            </li>
+        @endforeach
     </ul>
 </body>
 </html>
